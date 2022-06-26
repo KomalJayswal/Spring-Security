@@ -4,6 +4,8 @@ Adding Spring Security to Spring Boot has a surprising and interesting effect.
 
 ## Advantages 
 
+
+
 ## Disadvantages
 
 ## Getting Started
