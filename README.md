@@ -1,4 +1,4 @@
-# Basic Spring Security
+# Spring Security
 This version has a Hands-on on how to add Spring Security to a fresh Spring Boot application step-by-step along with customized username and password.
 
 ## Advantages 
