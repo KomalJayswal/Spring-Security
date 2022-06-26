@@ -1,12 +1,13 @@
 # Basic Spring Security
-This version has a Hands-on on how to add Spring Security to a fresh Spring Boot application step-by-step. 
-Adding Spring Security to Spring Boot has a surprising and interesting effect.
+This version has a Hands-on on how to add Spring Security to a fresh Spring Boot application step-by-step along with customized username and password.
 
 ## Advantages 
-
-
+In this version, we will only explore the default behaviour of spring security dependency along with customized username and password.
 
 ## Disadvantages
+
+In this version, we are not adding in memory multiple customized username and passwords.<br>
+We have explored it in _verion_3.0.0_ branch.
 
 ## Getting Started
 
@@ -23,11 +24,18 @@ public class Controller
         return "<h1>Hello User, have a nice day.<h1>";
     }
 }
+````
+3. You can customize username and password by adding it in your application.properties file. 
+```bash
+  spring.security.user.name=<YourUsername>
+  spring.security.user.password=<YourPassword>
 ```
-3. Now, run the application, then hit ROOT url : `http://localhost:8080/hello` in your browser.
+Now, instead of using default spring security credentials, use these customized configured authentication credentials.
+
+4. Now, run the application, then hit ROOT url : `http://localhost:8080/hello` in your browser.
 ### <u> Adding Spring Security to Springboot</u>
 
-4. Add `spring-boot-starter-security` dependency in POM. 
+5. Add `spring-boot-starter-security` dependency in POM. 
 ```bash
 <dependency>
 	<groupId>org.springframework.boot</groupId>
@@ -49,7 +57,7 @@ Just by adding the dependency in the class path, spring security immediately sta
 
 ### <u> Test a Secure Application</u>
 
-5. Now, do `mvn clean install`, and hit the root URL : `http://localhost:8080/hello` in your browser after running application. You will see there is a sign-in form now. This sign in form also do login validations.
+6. Now, do `mvn clean install`, and hit the root URL : `http://localhost:8080/hello` in your browser after running application. You will see there is a sign-in form now. This sign in form also do login validations.
 
 <details>
  <summary><I>How Spring Security Dependency internally works ? </I></summary>
@@ -74,11 +82,9 @@ Now, Filters will stand in front of servlet and intercept every request and give
 
 </details>
 
-6. Enter is the default user ID and password.
+7. Enter is the configured customized user ID and password.
 
->   If you see the console log in the editor, there is a `generated security password` that will be the password and by conventional spring security creates a user called `user`. So, this is user ID and password that spring security creates by default for a spring boot application just by adding the dependency in the classpath.
-
-You can customize that username and password by going to your application properties provide your user and name username and password there so here you are basically telling spring security that hey create user with this name and password with this so now when you create the spring boot application spring security will beautiful understand that okay now I don't have to be don't have to defaultly create my username and password instead I have to use these ones for the authentication credentials
+**Congratulations! You have secured you springboot application with customized credentials.**
 
 ## References
 
