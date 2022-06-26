@@ -1,4 +1,4 @@
-# Basic Spring Security
+# Spring Security
 Hands-on on how to add Spring Security to a fresh Spring Boot application step-by-step. 
 Adding Spring Security to Spring Boot has a surprising and interesting effect.
 
