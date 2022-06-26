@@ -1,9 +1,12 @@
 # Basic Spring Security
-Hands-on on how to add Spring Security to a fresh Spring Boot application step-by-step. 
-Adding Spring Security to Spring Boot has a surprising and interesting effect. 
-You’ll see what this effect is, and also understand why that’s happening.
+This version has a Hands-on on how to add Spring Security to a fresh Spring Boot application step-by-step. 
+Adding Spring Security to Spring Boot has a surprising and interesting effect.
 
-# Getting Started
+## Advantages 
+
+## Disadvantages
+
+## Getting Started
 
 ### <u>Test a Non-Secure Application</u>
 1. Build a fresh springboot Application using [Spring Initializer](https://start.spring.io). Add spring web dependency.
@@ -68,7 +71,6 @@ Now, Filters will stand in front of servlet and intercept every request and give
 
 </details>
 
-6. 
 
 ## References
 
