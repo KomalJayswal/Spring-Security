@@ -1,10 +1,20 @@
 # Basic Spring Security
-This version has a Hands-on on how to add Spring Security to a fresh Spring Boot application step-by-step. 
+Hands-on on how to add Spring Security to a fresh Spring Boot application step-by-step. 
 Adding Spring Security to Spring Boot has a surprising and interesting effect.
 
-## Advantages 
+## Advantages
+In this version, we will only explore the default behaviour of spring security dependency.
+
+**Spring Security Default Behaviour**
+* Add Mandatory authenications for URLs
+* Add login forms
+* Handles login error
+* Creates a user and sets a default password
 
 ## Disadvantages
+
+In this version, we are not customizing the username and password.<br> 
+We have explored it in _verion_2.0.0_ branch.
 
 ## Getting Started
 
@@ -64,19 +74,13 @@ Now, Filters will stand in front of servlet and intercept every request and give
 > So, while the servlets are mapped to the URLs, filters can be applied to all URLs that intercept all the URLs that may allow or deny any requests.<br>
 > Similarly, _spring security_ is just doing a filter and examining all the requests to allow or deny the request as per what it should be doing.
 
-> **Spring Security Default Behaviour**
-* Add Mandatory authenications for URLs
-* Add login forms
-* Handles login error
-* Creates a user and sets a default password 
-
 </details>
 
 6. Enter is the default user ID and password.
 
 >   If you see the console log in the editor, there is a `generated security password` that will be the password and by conventional spring security creates a user called `user`. So, this is user ID and password that spring security creates by default for a spring boot application just by adding the dependency in the classpath.
 
-You can customize that username and password by going to your application properties provide your user and name username and password there so here you are basically telling spring security that hey create user with this name and password with this so now when you create the spring boot application spring security will beautiful understand that okay now I don't have to be don't have to defaultly create my username and password instead I have to use these ones for the authentication credentials
+**Congratulation! You have secured your application with default spring security.**
 
 ## References
 
