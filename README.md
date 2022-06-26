@@ -43,8 +43,8 @@ public class Controller
 </dependency>
 ```
 
-| WARNING : Version 2.... is not working when I tried it on 26th June, 2022. |
-|----------------------------------------------------------------------------|
+| WARNING : For parent version (spring-boot-starter-parent) Version 2.7.1 is not able to work with spring security depenency on 26th June, 2022. Hence, using 2.7.0 |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 <details>
     <summary><I>About the Spring Security Dependency</I></summary>
 
