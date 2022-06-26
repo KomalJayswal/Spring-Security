@@ -47,7 +47,7 @@ Just by adding the dependency in the class path, spring security immediately sta
 
 ### <u> Test a Secure Application</u>
 
-5. Now, do `mvn clean install`, and hit the root URL : `http://localhost:8080/hello` in your browser after running application. You will see there is a sign-in form now. This sign in form also does validations as well.
+5. Now, do `mvn clean install`, and hit the root URL : `http://localhost:8080/hello` in your browser after running application. You will see there is a sign-in form now. This sign in form also do login validations.
 
 <details>
  <summary><I>How Spring Security Dependency internally works ? </I></summary>
@@ -65,22 +65,19 @@ Now, Filters will stand in front of servlet and intercept every request and give
 > Similarly, _spring security_ is just doing a filter and examining all the requests to allow or deny the request as per what it should be doing.
 
 > **Spring Security Default Behaviour**
-> * Add Mandatory authenications for URLs
-> * Add login forms
-> * Handles login error
+* Add Mandatory authenications for URLs
+* Add login forms
+* Handles login error
+* Creates a user and sets a default password 
 
 </details>
 
+6. Enter is the default user ID and password.
+
+>   If you see the console log in the editor, there is a `generated security password` that will be the password and by conventional spring security creates a user called `user`. So, this is user ID and password that spring security creates by default for a spring boot application just by adding the dependency in the classpath.
+
+You can customize that username and password by going to your application properties provide your user and name username and password there so here you are basically telling spring security that hey create user with this name and password with this so now when you create the spring boot application spring security will beautiful understand that okay now I don't have to be don't have to defaultly create my username and password instead I have to use these ones for the authentication credentials
 
 ## References
 
 [This Project is Well explained by Java Brains](https://www.youtube.com/watch?v=PhG5p_yv0zs&list=PLqq-6Pq4lTTYTEooakHchTGglSvkZAjnE&index=3)
-
-## More Spring Security Projects
-
-
-| Diagram | Reason |Solution|Solution|
-| ---               | ---    |---|---|
-|      |        |   |   |
-| |  |   |
-|    |        |   |   |
