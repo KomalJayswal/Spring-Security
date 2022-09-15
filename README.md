@@ -83,5 +83,4 @@ Now, Filters will stand in front of servlet and intercept every request and give
 
 ## Further
 
-we can customize the username and password.<br> 
-We have explored it in _verion_2.0.0_ branch.
+We have explored customize the username and password in _verion_2.0.0_ branch .
