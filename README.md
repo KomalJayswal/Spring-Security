@@ -1,20 +1,17 @@
 # Spring Security
-Hands-on on how to add Spring Security to a fresh Spring Boot application step-by-step. 
-Adding Spring Security to Spring Boot has a surprising and interesting effect.
+
+## Problem Statement
+
+Create a fresh Spring Boot application and add Spring Security to it. Login to the application using default username and password. 
 
 ## Advantages
-In this version, we will only explore the default behaviour of spring security dependency.
+Using this solution, we can explore the default behaviour of spring security dependency.
 
 **Spring Security Default Behaviour**
 * Add Mandatory authenications for URLs
 * Add login forms
 * Handles login error
 * Creates a user and sets a default password
-
-## Disadvantages
-
-In this version, we are not customizing the username and password.<br> 
-We have explored it in _verion_2.0.0_ branch.
 
 ## Getting Started
 
@@ -85,3 +82,8 @@ Now, Filters will stand in front of servlet and intercept every request and give
 ## References
 
 [This Project is Well explained by Java Brains](https://www.youtube.com/watch?v=PhG5p_yv0zs&list=PLqq-6Pq4lTTYTEooakHchTGglSvkZAjnE&index=3)
+
+## Further
+
+we can customize the username and password.<br> 
+We have explored it in _verion_2.0.0_ branch.
