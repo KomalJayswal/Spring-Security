@@ -4,10 +4,8 @@
 
 Create a fresh Spring Boot application and add Spring Security to it. Login to the application using default username and password. 
 
-## Advantages
-Using this solution, we can explore the default behaviour of spring security dependency.
+## Spring Security Default Behaviour
 
-**Spring Security Default Behaviour**
 * Add Mandatory authenications for URLs
 * Add login forms
 * Handles login error
