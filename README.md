@@ -1,4 +1,4 @@
-# Spring Security
+# Basic Spring Security
 
 Spring Security is a security framework that secures J2EE-based enterprise applications, by providing powerful, customizable security features like authentication and authorization.
 
