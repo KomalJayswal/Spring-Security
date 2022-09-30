@@ -1,13 +1,3 @@
-# Spring Security
-This version has a Hands-on on how to add Spring Security to a fresh Spring Boot application step-by-step along with customized username and password.
-
-## Advantages 
-In this version, we will only explore the default behaviour of spring security dependency along with customized username and password.
-
-## Disadvantages
-
-In this version, we are not adding in memory multiple customized username and passwords.<br>
-We have explored it in _verion_3.0.0_ branch.
 
 ## Getting Started
 
