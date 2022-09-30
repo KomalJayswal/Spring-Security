@@ -94,25 +94,25 @@ Now, Filters will stand in front of servlet and intercept every request and give
 <details>
  <summary><I>What is the Need for Spring Security ? </I></summary>
 
-Spring Security is an open source security framework
-It supports authentication and authorization
-It can be integrated with Spring MVC and the Servlet API
-It's easy to develop and unit-test the applications
+* Spring Security is an open source security framework
+* It supports authentication and authorization
+* It can be integrated with Spring MVC and the Servlet API
+* It's easy to develop and unit-test the applications
 </details>
 
 <details>
  <summary><I>What problem Spring security solves ? </I></summary>
 
 The Spring guys have already solved many security problems in spring security like,
-handling CSRF and making it convenient
-handling session fixation
-filters handle path traversal
-handling RunAs functionality
+* handling CSRF and making it convenient
+* handling session fixation
+* filters handle path traversal
+* handling RunAs functionality
 	
 So, when you will create your own filters, you have to implement all the Spring Security's features with your filters, but then you'd have Spring Security, wouldn't you?
 
-Also See, Why shouldn't we have our own filters
-
+Also See, [Why shouldn't we have our own filters](https://security.stackexchange.com/questions/18197/why-shouldnt-we-roll-our-own)
+</details>
 
 
 
