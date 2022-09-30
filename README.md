@@ -1,5 +1,7 @@
 # Spring Security
 
+Spring Security is a security framework that secures J2EE-based enterprise applications, by providing powerful, customizable security features like authentication and authorization.
+
 ## Problem Statement
 
 Create a fresh Spring Boot application and add Spring Security to it. Login to the application using default username and password. 
@@ -87,7 +89,30 @@ Now, Filters will stand in front of servlet and intercept every request and give
 > b) check if a particular header is there in every request or not<br><br>
 > So, while the servlets are mapped to the URLs, filters can be applied to all URLs that intercept all the URLs that may allow or deny any requests.<br>
 > Similarly, _spring security_ is just doing a filter and examining all the requests to allow or deny the request as per what it should be doing.
-
 </details>
+
+<details>
+ <summary><I>What is the Need for Spring Security ? </I></summary>
+
+Spring Security is an open source security framework
+It supports authentication and authorization
+It can be integrated with Spring MVC and the Servlet API
+It's easy to develop and unit-test the applications
+</details>
+
+<details>
+ <summary><I>What problem Spring security solves ? </I></summary>
+
+The Spring guys have already solved many security problems in spring security like,
+handling CSRF and making it convenient
+handling session fixation
+filters handle path traversal
+handling RunAs functionality
+	
+So, when you will create your own filters, you have to implement all the Spring Security's features with your filters, but then you'd have Spring Security, wouldn't you?
+
+Also See, Why shouldn't we have our own filters
+
+
 
 
