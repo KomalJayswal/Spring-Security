@@ -1,4 +1,4 @@
-# Spring Security
+# Basic Spring Security with Customized User Name and Password
 
 ## Problem Statement
 
