@@ -4,13 +4,6 @@
 
 Create a fresh Spring Boot application and add Spring Security to it. Login to the application using default username and password. 
 
-## Spring Security Default Behaviour
-
-* Add Mandatory authenications for URLs
-* Add login forms
-* Handles login error
-* Creates a user and sets a default password
-
 ## Getting Started
 
 ### <u>Test a Non-Secure Application</u>
@@ -40,8 +33,38 @@ public class Controller
 
 | WARNING : For parent version (spring-boot-starter-parent) Version 2.7.1 is not able to work with spring security depenency on 26th June, 2022. Hence, using 2.7.0 |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+### <u> Test a Secure Application</u>
+
+5. Now, do `mvn clean install`, and hit the root URL : `http://localhost:8080/hello` in your browser after running application. You will see there is a sign-in form now. This sign in form also do login validations.
+
+6. Enter is the default user ID and password.
+
+>   If you see the console log in the editor, there is a `generated security password` that will be the password and by conventional spring security creates a user called `user`. So, this is user ID and password that spring security creates by default for a spring boot application just by adding the dependency in the classpath.
+
+**Congratulation! You have secured your application with default spring security.**
+
+## References
+
+[This Project is Well explained by Java Brains](https://www.youtube.com/watch?v=PhG5p_yv0zs&list=PLqq-6Pq4lTTYTEooakHchTGglSvkZAjnE&index=3)
+
+## Further
+
+We have explored customize the username and password in _verion_2.0.0_ branch .
+
+## FAQ
+
 <details>
-    <summary><I>About the Spring Security Dependency</I></summary>
+    <summary><I>What are the Default Behaviour of Spring Security ?</I></summary>
+	
+* Add Mandatory authenications for URLs
+* Add login forms
+* Handles login error
+* Creates a user and sets a default password
+</details>
+
+<details>
+    <summary><I>What is Spring Security Dependency ?</I></summary>
 
 >This is a starter pack and a maven dependency, which pulls in all the necessary spring security dependecnies and makes them available for you, so that you do not need to download individual dependencies.<br><br>
 > **Note :** Now, most of the springboot starter dependency don't have typically effect just after adding it to the class path, you also have 
@@ -49,10 +72,6 @@ to add some kind of configuration that goes with it in order to tell springboot 
 However, in spring security, it quite diferent. <br>
 Just by adding the dependency in the class path, spring security immediately starts working.
 </details>
-
-### <u> Test a Secure Application</u>
-
-5. Now, do `mvn clean install`, and hit the root URL : `http://localhost:8080/hello` in your browser after running application. You will see there is a sign-in form now. This sign in form also do login validations.
 
 <details>
  <summary><I>How Spring Security Dependency internally works ? </I></summary>
@@ -71,16 +90,4 @@ Now, Filters will stand in front of servlet and intercept every request and give
 
 </details>
 
-6. Enter is the default user ID and password.
 
->   If you see the console log in the editor, there is a `generated security password` that will be the password and by conventional spring security creates a user called `user`. So, this is user ID and password that spring security creates by default for a spring boot application just by adding the dependency in the classpath.
-
-**Congratulation! You have secured your application with default spring security.**
-
-## References
-
-[This Project is Well explained by Java Brains](https://www.youtube.com/watch?v=PhG5p_yv0zs&list=PLqq-6Pq4lTTYTEooakHchTGglSvkZAjnE&index=3)
-
-## Further
-
-We have explored customize the username and password in _verion_2.0.0_ branch .
