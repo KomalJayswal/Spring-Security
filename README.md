@@ -6,7 +6,7 @@ Spring Security is a security framework that secures J2EE-based enterprise appli
 
 Create a fresh Spring Boot application and add Spring Security to it. Login to the application using default username and password. 
 
-## Getting Started
+## Getting Started With Solution
 
 ### <u>Test a Non-Secure Application</u>
 1. Build a fresh springboot Application using [Spring Initializer](https://start.spring.io). Add spring web dependency.
