@@ -33,9 +33,6 @@ public class Controller
 </dependency>
 ```
 
-| WARNING : For parent version (spring-boot-starter-parent) Version 2.7.1 is not able to work with spring security depenency on 26th June, 2022. Hence, using 2.7.0 |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-
 ### <u> Test a Secure Application</u>
 
 5. Now, do `mvn clean install`, and hit the root URL : `http://localhost:8080/hello` in your browser after running application. You will see there is a sign-in form now. This sign in form also do login validations.
